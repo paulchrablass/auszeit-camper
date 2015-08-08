@@ -1,0 +1,15 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+	Paul-Chrisitan Ablaß -- Designer/ Developer -- @paulchrablass
+
+# THANKS
+
+    https://github.com/nikita-kit/nikita-kickstarter
+
+# TECHNOLOGY COLOPHON
+
+	CSS3, HTML5
+	Nikita Kickstarter, Normalize.css

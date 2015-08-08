@@ -1,0 +1,8 @@
+%horizontal-list {
+	@extend %clearfix;
+
+	> li {
+		float: left;
+	}
+
+}

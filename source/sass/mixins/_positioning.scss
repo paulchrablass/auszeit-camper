@@ -1,0 +1,68 @@
+//
+// positioning mixin
+// ---------------
+//
+// This mixin is used for horizontally and/or vertically positioning elements.
+//
+// Sample input:
+// .element-1 {
+//     @include positioning(horizontal);
+// }
+//
+// .element-2 {
+//     @include positioning(vertical);
+// }
+//
+// .element-3 {
+//     @include positioning(horizontal-and-vertical);
+// }
+//
+// Sample output:
+// .element-1 {
+//     position: absolute;
+//     top: 50%;
+//     transform: translateY(-50%);
+// }
+//
+// .element-2 {
+//     position: absolute;
+//     left: 50%;
+//     transform: translateX(-50%);
+// }
+//
+// .element-3 {
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+// }
+//
+
+@mixin positioning($scope) {
+	& {
+		position: absolute;
+	}
+
+	@if $scope == "vertical" {
+		& {
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
+
+	@if $scope == "horizontal" {
+		& {
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+
+	@if $scope == "horizontal-and-vertical" {
+		& {
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+
+}
